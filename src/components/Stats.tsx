@@ -25,9 +25,9 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="py-16 bg-primary">
+    <section className="py-12 md:py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -36,13 +36,13 @@ const Stats = () => {
                 className="text-center animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex justify-center mb-4">
-                  <div className="bg-secondary/20 p-4 rounded-full">
-                    <Icon className="h-8 w-8 text-secondary" />
+                <div className="flex justify-center mb-3">
+                  <div className="bg-secondary/20 p-3 rounded-full">
+                    <Icon className="h-6 w-6 md:h-8 md:w-8 text-secondary" />
                   </div>
                 </div>
-                <h3 className="text-4xl font-bold text-white mb-2">{stat.value}</h3>
-                <p className="text-white/80">{stat.label}</p>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</h3>
+                <p className="text-sm md:text-base text-white/80">{stat.label}</p>
               </div>
             );
           })}
