@@ -70,24 +70,15 @@ const ProductCard = ({ product }: ProductCardProps) => {
             )}
           </div>
           
-          <div className="flex gap-2">
-            <Button 
-              asChild
-              size="sm" 
-              className="flex-1"
-            >
-              <Link to={`/products/${product.category}/${product.id}`}>
-                View Details
-              </Link>
-            </Button>
-            <Button 
-              size="sm" 
-              variant="outline"
-              className="px-3"
-            >
-              <ShoppingCart className="h-4 w-4" />
-            </Button>
-          </div>
+          <Button 
+            asChild
+            size="sm" 
+            className="w-full"
+          >
+            <Link to={`/products/${product.category}/${product.id}`}>
+              View Details
+            </Link>
+          </Button>
         </div>
       </CardContent>
     </Card>

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import CatalogueDownload from "@/components/CatalogueDownload";
 import ProductCard from "@/components/ProductCard";
 import { 
   Star, 
@@ -13,7 +14,6 @@ import {
   RotateCcw, 
   MessageCircle,
   ChevronRight,
-  ShoppingCart,
   Phone
 } from "lucide-react";
 import { useState } from "react";
@@ -139,23 +139,22 @@ const ProductDetail = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-6">
-              <Button size="lg" className="flex-1 group">
-                <ShoppingCart className="mr-2 h-5 w-5" />
-                Add to Cart
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href={`https://wa.me/919412517442?text=I'm interested in ${product.name}`} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  WhatsApp
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:+919412517442">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call
-                </a>
-              </Button>
+            <div className="space-y-3 mb-6">
+              <div className="grid grid-cols-2 gap-3">
+                <Button size="lg" variant="default" asChild className="bg-[#25D366] hover:bg-[#20BA5A]">
+                  <a href={`https://wa.me/919412517442?text=I'm interested in ${product.name}`} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    WhatsApp
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
+                  <a href="tel:+919412517442">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call Now
+                  </a>
+                </Button>
+              </div>
+              <CatalogueDownload variant="compact" />
             </div>
 
             <Separator className="my-6" />
