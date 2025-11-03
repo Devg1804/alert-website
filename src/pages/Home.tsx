@@ -30,7 +30,6 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Hero />
-      <Stats />
       
       {/* Why Choose Section */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-muted/50 to-background">
@@ -66,8 +65,10 @@ const Home = () => {
         </div>
       </section>
 
+      <Stats />
+
       {/* Product Categories Showcase */}
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -107,11 +108,14 @@ const Home = () => {
       <FeaturedProducts />
 
       {/* Catalogue Download Section */}
-      <section className="py-16 md:py-20 bg-muted/30">
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <CatalogueDownload />
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonial />
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-gradient-to-r from-[#1C396A] to-[#2C4A7A] text-white relative overflow-hidden">
@@ -136,9 +140,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <Testimonial />
     </div>
   );
 };

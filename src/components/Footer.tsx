@@ -1,4 +1,4 @@
-import { Lock, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Lock, Facebook, Twitter, Instagram, Linkedin, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -56,6 +56,15 @@ const Footer = () => {
               </a>
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://www.indiamart.com/aalart-locks/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors group"
+                title="Visit us on IndiaMART"
+              >
+                <ExternalLink className="h-5 w-5" />
               </a>
             </div>
             <div className="mt-4 text-sm opacity-80">
