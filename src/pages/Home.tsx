@@ -31,6 +31,11 @@ const Home = () => {
     <div className="min-h-screen">
       <Hero />
       
+      {/* Featured Products */}
+      <section className="py-16 md:py-20 bg-background">
+        <FeaturedProducts />
+      </section>
+
       {/* Why Choose Section */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4">
@@ -103,9 +108,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Featured Products */}
-      <FeaturedProducts />
 
       {/* Catalogue Download Section */}
       <section className="py-16 md:py-20 bg-background">

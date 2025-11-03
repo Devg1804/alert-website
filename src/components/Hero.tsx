@@ -5,14 +5,14 @@ import brandImage from "@/assets/aalart-brand.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] md:min-h-screen flex items-center pt-16">
+    <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center pt-16">
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${brandImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/25 to-transparent" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
