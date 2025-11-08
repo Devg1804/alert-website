@@ -4,6 +4,10 @@ import mortise from "@/assets/product-mortise.jpg";
 import deadbolt from "@/assets/product-deadbolt.jpg";
 import shutter from "@/assets/product-shutter.jpg";
 import camera from "@/assets/product-camera.jpg";
+import model3003 from "@/assets/model-3003.jpg";
+import model3004 from "@/assets/model-3004.jpg";
+import model3005 from "@/assets/model-3005.jpg";
+import model3006 from "@/assets/model-3006.jpg";
 
 export interface Product {
   id: string;
@@ -417,6 +421,130 @@ export const products: Product[] = [
       warranty: "3 Years",
       resolution: "3840x2160p (4K)",
       storage: "microSD up to 256GB + Cloud"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "shutter-3003",
+    name: "Center Shutter Lock Bahubali",
+    category: "shutter-locks",
+    price: 2999,
+    rating: 4.7,
+    reviewCount: 85,
+    images: [model3003, model3003, model3003],
+    thumbnail: model3003,
+    description: "Heavy-duty center shutter lock designed for maximum security. Perfect for commercial and industrial shutters.",
+    features: [
+      "Heavy-duty iron construction",
+      "Center locking mechanism",
+      "Weather-resistant PC finish",
+      "Anti-tamper design",
+      "Suitable for heavy shutters",
+      "Easy installation"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "PC",
+      dimensions: "140mm",
+      weight: "1.8 kg",
+      warranty: "2 Years",
+      modelNo: "3003",
+      type: "Center Shutter Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "shutter-3004",
+    name: "Side Shutter Lock Fauladi",
+    category: "shutter-locks",
+    price: 1999,
+    rating: 4.6,
+    reviewCount: 92,
+    images: [model3004, model3004, model3004],
+    thumbnail: model3004,
+    description: "Strong side-mounted shutter lock with iron construction. Ideal for shop shutters and warehouse doors.",
+    features: [
+      "Robust iron construction",
+      "Side-mounting design",
+      "PC finish for durability",
+      "Smooth locking action",
+      "Compact size",
+      "Includes mounting hardware"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "PC",
+      dimensions: "90mm",
+      weight: "1.2 kg",
+      warranty: "2 Years",
+      modelNo: "3004",
+      type: "Side Shutter Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "shutter-3005",
+    name: "Side Shutter Lock Sleek",
+    category: "shutter-locks",
+    price: 1499,
+    rating: 4.5,
+    reviewCount: 108,
+    images: [model3005, model3005, model3005],
+    thumbnail: model3005,
+    description: "Sleek and compact side shutter lock for modern shutters. Space-saving design without compromising security.",
+    features: [
+      "Compact sleek design",
+      "Iron construction",
+      "PC protective coating",
+      "Space-efficient",
+      "Easy to operate",
+      "Suitable for light to medium shutters"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "PC",
+      dimensions: "75mm",
+      weight: "0.9 kg",
+      warranty: "2 Years",
+      modelNo: "3005",
+      type: "Side Shutter Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "shutter-3006",
+    name: "Godown Lock",
+    category: "shutter-locks",
+    price: 3499,
+    rating: 4.8,
+    reviewCount: 67,
+    images: [model3006, model3006, model3006],
+    thumbnail: model3006,
+    description: "Heavy-duty godown lock designed for warehouses and storage facilities. Maximum security for large shutters.",
+    features: [
+      "Extra-heavy iron construction",
+      "Designed for large shutters",
+      "PC finish for weather resistance",
+      "High security locking",
+      "Suitable for warehouses",
+      "Durable and long-lasting"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "PC",
+      dimensions: "150mm",
+      weight: "2.5 kg",
+      warranty: "2 Years",
+      modelNo: "3006",
+      type: "Godown Lock"
     },
     inStock: true,
     isNew: true,
