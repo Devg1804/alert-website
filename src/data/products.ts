@@ -18,6 +18,10 @@ import model2007 from "@/assets/model-2007.jpg";
 import model2008 from "@/assets/model-2008.jpg";
 import model3001 from "@/assets/model-3001.jpg";
 import model3002 from "@/assets/model-3002.jpg";
+import model3007 from "@/assets/model-3007.jpg";
+import model3008 from "@/assets/model-3008.jpg";
+import model3009 from "@/assets/model-3009.jpg";
+import model3010 from "@/assets/model-3010.jpg";
 
 export interface Product {
   id: string;
@@ -47,13 +51,10 @@ export interface Product {
 }
 
 export const categories = [
-  { id: "smart-locks", name: "Smart Locks", icon: "Smartphone" },
-  { id: "padlocks", name: "Padlocks", icon: "Lock" },
   { id: "mortise-handles", name: "Mortise Handles", icon: "DoorOpen" },
   { id: "deadbolts", name: "Main Door Locks", icon: "ShieldCheck" },
   { id: "shutter-locks", name: "Shutter Locks", icon: "Factory" },
-  { id: "toolbox-locks", name: "Tool Box Locks", icon: "Wrench" },
-  { id: "security-cameras", name: "Security Cameras", icon: "Camera" },
+  { id: "padlocks", name: "Padlocks", icon: "Lock" },
 ];
 
 export const products: Product[] = [
@@ -684,6 +685,130 @@ export const products: Product[] = [
       warranty: "2 Years",
       modelNo: "3002",
       type: "10 Chal Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "shutter-3007",
+    name: "High Round Shutter Lock",
+    category: "shutter-locks",
+    price: 1599,
+    rating: 4.7,
+    reviewCount: 78,
+    images: [model3007],
+    thumbnail: model3007,
+    description: "High-quality round shutter lock with durable iron construction. Available in multiple sizes for versatile applications.",
+    features: [
+      "Round design",
+      "Iron construction",
+      "CP finish for durability",
+      "Available in 75mm and 90mm",
+      "Weather resistant",
+      "Easy installation"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "CP",
+      dimensions: "75mm, 90mm",
+      weight: "1.3 kg",
+      warranty: "2 Years",
+      modelNo: "3007",
+      type: "High Round Shutter Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "padlock-3008",
+    name: "Padlock Single Locking",
+    category: "padlocks",
+    price: 899,
+    rating: 4.6,
+    reviewCount: 112,
+    images: [model3008],
+    thumbnail: model3008,
+    description: "Reliable single locking padlock with iron construction. Available in multiple sizes for various security needs.",
+    features: [
+      "Single locking mechanism",
+      "Durable iron construction",
+      "CP finish for protection",
+      "Available in 60mm, 65mm, 70mm",
+      "Compact and portable",
+      "Versatile usage"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "CP",
+      dimensions: "60mm, 65mm, 70mm",
+      weight: "0.6 kg",
+      warranty: "2 Years",
+      modelNo: "3008",
+      type: "Padlock Single Locking"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "padlock-3009",
+    name: "Padlock Double Locking",
+    category: "padlocks",
+    price: 1099,
+    rating: 4.7,
+    reviewCount: 128,
+    images: [model3009],
+    thumbnail: model3009,
+    description: "Enhanced security padlock with double locking mechanism. Premium iron construction for maximum protection.",
+    features: [
+      "Double locking system",
+      "Heavy-duty iron build",
+      "CP protective finish",
+      "Available in 60mm, 65mm, 70mm",
+      "High security design",
+      "Tamper-resistant"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "CP",
+      dimensions: "60mm, 65mm, 70mm",
+      weight: "0.7 kg",
+      warranty: "2 Years",
+      modelNo: "3009",
+      type: "Padlock Double Locking"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "padlock-3010",
+    name: "Bottom Padlock Double Locking",
+    category: "padlocks",
+    price: 1199,
+    rating: 4.8,
+    reviewCount: 94,
+    images: [model3010],
+    thumbnail: model3010,
+    description: "Specialized bottom padlock with double locking mechanism. Engineered for superior security and durability.",
+    features: [
+      "Bottom locking design",
+      "Double lock mechanism",
+      "Premium iron construction",
+      "CP finish coating",
+      "70mm size",
+      "Maximum security"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "CP",
+      dimensions: "70mm",
+      weight: "0.8 kg",
+      warranty: "2 Years",
+      modelNo: "3010",
+      type: "Bottom Padlock Double Locking"
     },
     inStock: true,
     isNew: true,

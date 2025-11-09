@@ -8,10 +8,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CatalogueDownload from "@/components/CatalogueDownload";
 import ProductCard from "@/components/ProductCard";
 import { 
-  Star, 
-  Shield, 
-  Truck, 
-  RotateCcw, 
   MessageCircle,
   ChevronRight,
   Phone
@@ -21,7 +17,6 @@ import { useState } from "react";
 const ProductDetail = () => {
   const { productId } = useParams();
   const product = getProductById(productId || "");
-  const [selectedImage, setSelectedImage] = useState(0);
 
   if (!product) {
     return (
@@ -59,25 +54,12 @@ const ProductDetail = () => {
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {/* Image Gallery */}
           <div>
-            <div className="bg-muted/30 rounded-lg overflow-hidden mb-4 aspect-square">
+            <div className="bg-muted/30 rounded-lg overflow-hidden aspect-square">
               <img
-                src={product.images[selectedImage]}
+                src={product.thumbnail}
                 alt={product.name}
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div className="grid grid-cols-3 gap-3">
-              {product.images.map((img, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setSelectedImage(idx)}
-                  className={`bg-muted/30 rounded-lg overflow-hidden aspect-square border-2 transition-colors ${
-                    selectedImage === idx ? 'border-primary' : 'border-transparent'
-                  }`}
-                >
-                  <img src={img} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-cover" />
-                </button>
-              ))}
             </div>
           </div>
 
@@ -95,19 +77,6 @@ const ProductDetail = () => {
             </div>
 
             <h1 className="text-3xl md:text-4xl font-bold mb-4">{product.name}</h1>
-
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center">
-                {[...Array(5)].map((_, i) => (
-                  <Star 
-                    key={i} 
-                    className={`h-5 w-5 ${i < Math.floor(product.rating) ? 'fill-secondary text-secondary' : 'text-muted-foreground/30'}`}
-                  />
-                ))}
-              </div>
-              <span className="text-sm font-medium">{product.rating}</span>
-              <span className="text-sm text-muted-foreground">({product.reviewCount} reviews)</span>
-            </div>
 
             <div className="flex items-baseline gap-3 mb-6">
               <span className="text-4xl font-bold text-primary">
@@ -155,32 +124,6 @@ const ProductDetail = () => {
                 </Button>
               </div>
               <CatalogueDownload variant="compact" />
-            </div>
-
-            <Separator className="my-6" />
-
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div className="flex items-center gap-3">
-                <Shield className="h-5 w-5 text-primary" />
-                <div className="text-sm">
-                  <div className="font-medium">{product.specifications.warranty}</div>
-                  <div className="text-muted-foreground">Warranty</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Truck className="h-5 w-5 text-primary" />
-                <div className="text-sm">
-                  <div className="font-medium">Free Shipping</div>
-                  <div className="text-muted-foreground">Pan India</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <RotateCcw className="h-5 w-5 text-primary" />
-                <div className="text-sm">
-                  <div className="font-medium">Easy Returns</div>
-                  <div className="text-muted-foreground">7 Days</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

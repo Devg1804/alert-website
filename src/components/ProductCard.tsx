@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, ShoppingCart } from "lucide-react";
 import { Product } from "@/data/products";
 import { Link } from "react-router-dom";
 
@@ -39,24 +38,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
       
       <CardContent className="p-4 flex-1 flex flex-col">
         <Link to={`/products/${product.category}/${product.id}`}>
-          <h3 className="font-semibold text-base mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+          <h3 className="font-semibold text-base mb-3 line-clamp-2 group-hover:text-primary transition-colors">
             {product.name}
           </h3>
         </Link>
         
-        <div className="flex items-center gap-1 mb-2">
-          <div className="flex items-center">
-            {[...Array(5)].map((_, i) => (
-              <Star 
-                key={i} 
-                className={`h-3 w-3 ${i < Math.floor(product.rating) ? 'fill-secondary text-secondary' : 'text-muted-foreground/30'}`}
-              />
-            ))}
-          </div>
-          <span className="text-xs text-muted-foreground">({product.reviewCount})</span>
-        </div>
-        
-        <p className="text-xs text-muted-foreground mb-3 line-clamp-2 flex-1">
+        <p className="text-xs text-muted-foreground mb-4 line-clamp-2 flex-1">
           {product.description}
         </p>
         
