@@ -67,10 +67,21 @@ const Footer = () => {
                 <ExternalLink className="h-5 w-5" />
               </a>
             </div>
-            <div className="mt-4 text-sm opacity-80">
-              <p>Alert India No. 1</p>
-              <p>Aligarh, Uttar Pradesh</p>
-              <p>info@aalartindia.com</p>
+            <div className="mt-4 text-sm opacity-80 space-y-1">
+              <p className="font-semibold">ALERT INDIA NO-1</p>
+              <p>Proprietor: ATAL GUPTA</p>
+              <p>18/21, Sarai Mishra, Jaiganj</p>
+              <p>Aligarh - 202001, Uttar Pradesh</p>
+              <p className="mt-2">
+                <a href="tel:9412517442" className="hover:opacity-100">📞 9412517442</a>
+              </p>
+              <p>
+                <a href="tel:9634933897" className="hover:opacity-100">📞 9634933897</a>
+              </p>
+              <p className="mt-2">
+                <a href="mailto:aalertindiano.1@gmail.com" className="hover:opacity-100">✉️ aalertindiano.1@gmail.com</a>
+              </p>
+              <p className="text-xs mt-2">GSTIN: 09ANRPG4894Q1ZS</p>
             </div>
           </div>
         </div>

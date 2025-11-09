@@ -8,6 +8,16 @@ import model1003 from "@/assets/model-1003.jpg";
 import model1004 from "@/assets/model-1004.jpg";
 import model1005 from "@/assets/model-1005.jpg";
 import model1006 from "@/assets/model-1006.jpg";
+import model2001 from "@/assets/model-2001.jpg";
+import model2002 from "@/assets/model-2002.jpg";
+import model2003 from "@/assets/model-2003.jpg";
+import model2004 from "@/assets/model-2004.jpg";
+import model2005 from "@/assets/model-2005.jpg";
+import model2006 from "@/assets/model-2006.png";
+import model2007 from "@/assets/model-2007.jpg";
+import model2008 from "@/assets/model-2008.jpg";
+import model3001 from "@/assets/model-3001.jpg";
+import model3002 from "@/assets/model-3002.jpg";
 
 export interface Product {
   id: string;
@@ -368,6 +378,316 @@ export const products: Product[] = [
     inStock: true,
     isNew: true,
     isFeatured: false
+  },
+  {
+    id: "deadbolt-2001",
+    name: "Mortise Lock 2001",
+    category: "deadbolts",
+    price: 1299,
+    rating: 4.7,
+    reviewCount: 98,
+    images: [model2001, model2001, model2001],
+    thumbnail: model2001,
+    description: "High-security mortise lock with iron construction and S.S finish. Perfect for main doors and commercial applications.",
+    features: [
+      "Heavy-duty iron construction",
+      "S.S finish for durability",
+      "70mm size",
+      "Smooth locking mechanism",
+      "Corrosion resistant",
+      "Easy installation"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "S.S",
+      dimensions: "70mm",
+      weight: "1.2 kg",
+      warranty: "2 Years",
+      modelNo: "2001",
+      type: "Mortise Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "deadbolt-2002",
+    name: "Mortise Lock 2002",
+    category: "deadbolts",
+    price: 1299,
+    rating: 4.6,
+    reviewCount: 87,
+    images: [model2002, model2002, model2002],
+    thumbnail: model2002,
+    description: "Reliable mortise lock with superior iron construction. Ideal for residential and commercial main doors.",
+    features: [
+      "Robust iron construction",
+      "S.S finish coating",
+      "70mm standard size",
+      "Anti-rust protection",
+      "Durable mechanism",
+      "Universal compatibility"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "S.S",
+      dimensions: "70mm",
+      weight: "1.2 kg",
+      warranty: "2 Years",
+      modelNo: "2002",
+      type: "Mortise Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "deadbolt-2003",
+    name: "Mortise Lock 2003",
+    category: "deadbolts",
+    price: 1299,
+    rating: 4.7,
+    reviewCount: 102,
+    images: [model2003, model2003, model2003],
+    thumbnail: model2003,
+    description: "Premium quality mortise lock designed for maximum security and durability.",
+    features: [
+      "Premium iron material",
+      "S.S protective finish",
+      "70mm dimensions",
+      "High security design",
+      "Weather resistant",
+      "Long-lasting performance"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "S.S",
+      dimensions: "70mm",
+      weight: "1.2 kg",
+      warranty: "2 Years",
+      modelNo: "2003",
+      type: "Mortise Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "deadbolt-2004",
+    name: "Mortise Lock 2004",
+    category: "deadbolts",
+    price: 1299,
+    rating: 4.8,
+    reviewCount: 115,
+    images: [model2004, model2004, model2004],
+    thumbnail: model2004,
+    description: "Heavy-duty mortise lock with advanced locking mechanism. Built for strength and reliability.",
+    features: [
+      "Heavy-duty construction",
+      "S.S finish quality",
+      "70mm size",
+      "Advanced lock mechanism",
+      "Anti-tamper design",
+      "Professional grade"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "S.S",
+      dimensions: "70mm",
+      weight: "1.2 kg",
+      warranty: "2 Years",
+      modelNo: "2004",
+      type: "Mortise Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "deadbolt-2005",
+    name: "Baby Mortise Lock 2005",
+    category: "deadbolts",
+    price: 999,
+    rating: 4.5,
+    reviewCount: 76,
+    images: [model2005, model2005, model2005],
+    thumbnail: model2005,
+    description: "Compact baby mortise lock perfect for interior doors and smaller applications.",
+    features: [
+      "Compact design",
+      "Iron construction",
+      "S.S finish",
+      "70mm size",
+      "Ideal for interior doors",
+      "Easy to install"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "S.S",
+      dimensions: "70mm",
+      weight: "0.9 kg",
+      warranty: "2 Years",
+      modelNo: "2005",
+      type: "Baby Mortise Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "deadbolt-2006",
+    name: "Door Kit 2006",
+    category: "deadbolts",
+    price: 2499,
+    rating: 4.9,
+    reviewCount: 142,
+    images: [model2006, model2006, model2006],
+    thumbnail: model2006,
+    description: "Complete door kit in stainless steel with multiple size options and finish varieties. Professional solution for all door types.",
+    features: [
+      "Complete door kit",
+      "Multiple sizes available",
+      "Various finish options",
+      "Professional grade",
+      "Includes all components",
+      "Versatile application"
+    ],
+    specifications: {
+      material: "S.S",
+      finish: "T.T, P.L, C.L, R.G, S.L, PRINT, B.A, L.A",
+      dimensions: "9-2, 3, 10-2, 3, 12-2,3, 13-2,3, 14-2, 3, 16-3,4,5, 19-5",
+      weight: "2.5 kg",
+      warranty: "2 Years",
+      modelNo: "2006",
+      type: "Door Kit"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "deadbolt-2007",
+    name: "Ultra Key Pin Cylinder Lock 2007",
+    category: "deadbolts",
+    price: 1799,
+    rating: 4.8,
+    reviewCount: 124,
+    images: [model2007, model2007, model2007],
+    thumbnail: model2007,
+    description: "Ultra-secure pin cylinder lock available in Brass and Zinc with multiple size options. All finishes available for customization.",
+    features: [
+      "Ultra key security",
+      "Pin cylinder mechanism",
+      "Multiple sizes: 60mm, 70mm, 90mm",
+      "Brass/Zinc material options",
+      "All finishes available",
+      "High precision engineering"
+    ],
+    specifications: {
+      material: "Brass / Zinc",
+      finish: "All Finish Available",
+      dimensions: "60mm, 70mm, 90mm",
+      weight: "0.8 kg",
+      warranty: "2 Years",
+      modelNo: "2007",
+      type: "Pin Cylinder Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "deadbolt-2008",
+    name: "Simple Key Pin Cylinder Lock 2008",
+    category: "deadbolts",
+    price: 1499,
+    rating: 4.6,
+    reviewCount: 95,
+    images: [model2008, model2008, model2008],
+    thumbnail: model2008,
+    description: "Simple and reliable pin cylinder lock with Brass/Zinc construction. Multiple sizes and all finishes available.",
+    features: [
+      "Simple key design",
+      "Pin cylinder system",
+      "Sizes: 60mm, 70mm, 90mm",
+      "Brass/Zinc material",
+      "All finishes available",
+      "Easy key operation"
+    ],
+    specifications: {
+      material: "Brass / Zinc",
+      finish: "All Finish Available",
+      dimensions: "60mm, 70mm, 90mm",
+      weight: "0.7 kg",
+      warranty: "2 Years",
+      modelNo: "2008",
+      type: "Pin Cylinder Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: false
+  },
+  {
+    id: "shutter-3001",
+    name: "10 Chal Super 3001",
+    category: "shutter-locks",
+    price: 1899,
+    rating: 4.7,
+    reviewCount: 88,
+    images: [model3001, model3001, model3001],
+    thumbnail: model3001,
+    description: "Super strong 10-bolt shutter lock with iron construction. Ideal for high-security commercial shutters.",
+    features: [
+      "10-bolt locking system",
+      "Heavy iron construction",
+      "CP finish for durability",
+      "90mm size",
+      "Commercial grade security",
+      "Weather resistant"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "CP",
+      dimensions: "90mm",
+      weight: "1.5 kg",
+      warranty: "2 Years",
+      modelNo: "3001",
+      type: "10 Chal Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
+  },
+  {
+    id: "shutter-3002",
+    name: "10 Chal Super 3002",
+    category: "shutter-locks",
+    price: 1899,
+    rating: 4.8,
+    reviewCount: 96,
+    images: [model3002, model3002, model3002],
+    thumbnail: model3002,
+    description: "Premium 10-bolt shutter lock with enhanced security features. Perfect for warehouses and commercial properties.",
+    features: [
+      "10-bolt mechanism",
+      "Robust iron build",
+      "CP protective coating",
+      "90mm dimensions",
+      "Maximum security",
+      "Industrial strength"
+    ],
+    specifications: {
+      material: "Iron",
+      finish: "CP",
+      dimensions: "90mm",
+      weight: "1.5 kg",
+      warranty: "2 Years",
+      modelNo: "3002",
+      type: "10 Chal Lock"
+    },
+    inStock: true,
+    isNew: true,
+    isFeatured: true
   }
 ];
 
