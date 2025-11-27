@@ -80,13 +80,13 @@ const Home = () => {
               Explore Our Product Range
             </h2>
             <p className="text-lg text-muted-foreground">
-              From traditional locks to smart security systems
+              From traditional locks to advanced security systems
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Smart Locks", icon: Smartphone, color: "from-blue-500 to-cyan-500" },
+              { name: "Mortise Handles", icon: Wrench, color: "from-blue-500 to-cyan-500" },
               { name: "Padlocks", icon: Lock, color: "from-orange-500 to-red-500" },
               { name: "Door Hardware", icon: Wrench, color: "from-purple-500 to-pink-500" },
               { name: "Premium Series", icon: Star, color: "from-amber-500 to-yellow-500" },

@@ -5,7 +5,7 @@ import brandImage from "@/assets/aalart-brand.jpg";
 const milestones = [
   { year: "1975", title: "Foundation", description: "Started as a small workshop in Aligarh" },
   { year: "1990", title: "Expansion", description: "Opened first manufacturing facility" },
-  { year: "2005", title: "Innovation", description: "Launched first smart lock technology" },
+  { year: "2005", title: "Innovation", description: "Launched advanced security technology" },
   { year: "2015", title: "Recognition", description: "Became India's leading lock manufacturer" },
   { year: "2025", title: "Present Day", description: "Serving 1M+ customers across 50+ cities" },
 ];
@@ -84,7 +84,7 @@ const About = () => {
                   every Indian home and business with world-class security solutions at affordable prices.
                 </p>
                 <p>
-                  Over five decades, we've evolved from traditional lock-making to pioneering smart security 
+                  Over five decades, we've evolved from traditional lock-making to pioneering advanced security 
                   systems, while never compromising on the craftsmanship that made us trusted by millions.
                 </p>
                 <p>
@@ -150,7 +150,7 @@ const About = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Factory, title: "Modern Facilities", desc: "ISO-certified manufacturing units with advanced machinery" },
+              { icon: Factory, title: "Modern Facilities", desc: "State-of-the-art manufacturing units with advanced machinery" },
               { icon: CheckCircle, title: "Quality Control", desc: "Rigorous testing at every stage of production" },
               { icon: Shield, title: "Certified Standards", desc: "Meeting international security and quality standards" },
             ].map((item, index) => {

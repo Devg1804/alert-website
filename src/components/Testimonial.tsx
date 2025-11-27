@@ -15,7 +15,7 @@ const testimonials = [
     role: "Business Owner",
     location: "Mumbai",
     initials: "MG",
-    quote: "The Aalart smart locks have transformed our business security. The mobile app integration is seamless, and the build quality is outstanding. Highly recommend for anyone looking for reliable security solutions.",
+    quote: "The Aalart security locks have transformed our business security. The build quality is outstanding and installation was seamless. Highly recommend for anyone looking for reliable security solutions.",
     rating: 5,
   },
   {

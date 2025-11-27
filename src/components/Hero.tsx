@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="flex items-center gap-6 mb-6 md:mb-8 animate-fade-up" style={{ animationDelay: '0.3s' }}>
               <div className="flex items-center gap-2 text-white md:text-foreground">
                 <Award className="h-5 w-5 text-[#F59E0B]" />
-                <span className="text-sm font-semibold">ISO Certified</span>
+                <span className="text-sm font-semibold">Quality Assured</span>
               </div>
               <div className="h-6 w-px bg-white/30 md:bg-border"></div>
               <div className="flex items-center gap-2 text-white md:text-foreground">
