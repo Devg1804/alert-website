@@ -77,6 +77,10 @@ const ProductDetail = () => {
             </div>
 
             <h1 className="text-3xl md:text-4xl font-bold mb-4">{product.name}</h1>
+            
+            <p className="text-sm text-muted-foreground mb-4">
+              Manufactured & Supply By:- <span className="font-medium">ALERT INDIA NO-1</span>
+            </p>
 
             <div className="flex items-baseline gap-3 mb-6">
               <span className="text-4xl font-bold text-primary">
