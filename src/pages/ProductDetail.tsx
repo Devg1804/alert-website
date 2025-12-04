@@ -3,19 +3,21 @@ import { getProductById, getProductsByCategory } from "@/data/products";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CatalogueDownload from "@/components/CatalogueDownload";
 import ProductCard from "@/components/ProductCard";
+import ImageZoomDialog from "@/components/ImageZoomDialog";
 import { 
   MessageCircle,
   ChevronRight,
-  Phone
+  Phone,
+  ZoomIn
 } from "lucide-react";
 import { useState } from "react";
 
 const ProductDetail = () => {
   const { productId } = useParams();
+  const [isZoomOpen, setIsZoomOpen] = useState(false);
   const product = getProductById(productId || "");
 
   if (!product) {
@@ -54,12 +56,21 @@ const ProductDetail = () => {
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {/* Image Gallery */}
           <div>
-            <div className="bg-muted/30 rounded-lg overflow-hidden aspect-square">
+            <div 
+              className="bg-muted/30 rounded-lg overflow-hidden aspect-square relative group cursor-pointer"
+              onClick={() => setIsZoomOpen(true)}
+            >
               <img
                 src={product.thumbnail}
                 alt={product.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
+              <button
+                className="absolute bottom-4 right-4 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                aria-label="Zoom image"
+              >
+                <ZoomIn className="h-5 w-5" />
+              </button>
             </div>
           </div>
 
@@ -78,25 +89,9 @@ const ProductDetail = () => {
 
             <h1 className="text-3xl md:text-4xl font-bold mb-4">{product.name}</h1>
             
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-sm text-muted-foreground mb-6">
               Manufactured & Supply By:- <span className="font-medium">ALERT INDIA NO-1</span>
             </p>
-
-            <div className="flex items-baseline gap-3 mb-6">
-              <span className="text-4xl font-bold text-primary">
-                ₹{product.price.toLocaleString('en-IN')}
-              </span>
-              {product.originalPrice && (
-                <>
-                  <span className="text-xl text-muted-foreground line-through">
-                    ₹{product.originalPrice.toLocaleString('en-IN')}
-                  </span>
-                  <Badge className="bg-destructive text-destructive-foreground">
-                    Save {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}%
-                  </Badge>
-                </>
-              )}
-            </div>
 
             <p className="text-muted-foreground mb-6">{product.description}</p>
 
@@ -180,6 +175,13 @@ const ProductDetail = () => {
           </div>
         )}
       </div>
+
+      <ImageZoomDialog
+        src={product.thumbnail}
+        alt={product.name}
+        isOpen={isZoomOpen}
+        onClose={() => setIsZoomOpen(false)}
+      />
     </div>
   );
 };

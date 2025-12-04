@@ -51,9 +51,17 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Create WhatsApp message with form data
+    const message = `*New Contact Form Submission*%0A%0A*Name:* ${encodeURIComponent(formData.name)}%0A*Email:* ${encodeURIComponent(formData.email)}%0A*Phone:* ${encodeURIComponent(formData.phone || 'Not provided')}%0A%0A*Message:*%0A${encodeURIComponent(formData.message)}`;
+    
+    // Open WhatsApp with the message
+    const whatsappUrl = `https://wa.me/919412517442?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+    
     toast({
-      title: "Message Sent!",
-      description: "We'll get back to you as soon as possible.",
+      title: "Redirecting to WhatsApp!",
+      description: "Complete your message in WhatsApp to send it to us.",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
