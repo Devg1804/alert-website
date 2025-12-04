@@ -12,7 +12,7 @@ interface ImageZoomDialogProps {
 }
 
 const ImageZoomDialog = ({ src, alt, isOpen, onClose }: ImageZoomDialogProps) => {
-  const [scale, setScale] = useState(1);
+  const [scale, setScale] = useState(0.5);
 
   const handleZoomIn = () => {
     setScale(prev => Math.min(prev + 0.25, 3));
@@ -23,11 +23,11 @@ const ImageZoomDialog = ({ src, alt, isOpen, onClose }: ImageZoomDialogProps) =>
   };
 
   const handleReset = () => {
-    setScale(1);
+    setScale(0.5);
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => { if (!open) { onClose(); setScale(1); } }}>
+    <Dialog open={isOpen} onOpenChange={(open) => { if (!open) { onClose(); setScale(0.5); } }}>
       <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 overflow-hidden bg-black/95 border-none">
         <VisuallyHidden>
           <DialogTitle>Product Image Zoom View</DialogTitle>
