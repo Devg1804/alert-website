@@ -23,18 +23,18 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#home" className="opacity-80 hover:opacity-100 transition-opacity">Home</a></li>
-              <li><a href="#about" className="opacity-80 hover:opacity-100 transition-opacity">About</a></li>
-              <li><a href="#products" className="opacity-80 hover:opacity-100 transition-opacity">Products</a></li>
-              <li><a href="#contact" className="opacity-80 hover:opacity-100 transition-opacity">Contact</a></li>
+            <h4 className="font-bold mb-4 text-base">Quick Links</h4>
+            <ul className="space-y-2 text-[15px]">
+              <li><a href="/" className="opacity-80 hover:opacity-100 transition-opacity">Home</a></li>
+              <li><a href="/about" className="opacity-80 hover:opacity-100 transition-opacity">About</a></li>
+              <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Products</a></li>
+              <li><a href="/contact" className="opacity-80 hover:opacity-100 transition-opacity">Contact</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-bold mb-4">Products</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-bold mb-4 text-base">Products</h4>
+            <ul className="space-y-2 text-[15px]">
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Mortise Handles</a></li>
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Main Door Locks</a></li>
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Shutter Locks</a></li>
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4">Connect With Us</h4>
+            <h4 className="font-bold mb-4 text-base">Connect With Us</h4>
             <div className="flex gap-4">
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -67,7 +67,7 @@ const Footer = () => {
                 <ExternalLink className="h-5 w-5" />
               </a>
             </div>
-            <div className="mt-4 text-sm opacity-80 space-y-1">
+            <div className="mt-4 text-[15px] opacity-80 space-y-1">
               <p className="font-semibold">ALERT INDIA NO-1</p>
               <p>Proprietor: ATAL GUPTA</p>
               <p>18/21, Sarai Mishra, Jaiganj</p>

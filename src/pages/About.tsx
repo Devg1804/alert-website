@@ -1,4 +1,4 @@
-import { Shield, Award, Users, Factory, Target, Heart, CheckCircle } from "lucide-react";
+import { Shield, Award, Users, Factory, Target, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import brandImage from "@/assets/aalart-brand.jpg";
 
@@ -139,37 +139,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Manufacturing Excellence */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Manufacturing Excellence</h2>
-            <p className="text-lg text-muted-foreground">
-              State-of-the-art facilities combined with decades of expertise
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: Factory, title: "Modern Facilities", desc: "State-of-the-art manufacturing units with advanced machinery" },
-              { icon: CheckCircle, title: "Quality Control", desc: "Rigorous testing at every stage of production" },
-              { icon: Shield, title: "Certified Standards", desc: "Meeting international security and quality standards" },
-            ].map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-8">
-                    <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#1C396A]/10 to-[#E36E4A]/10 rounded-2xl mb-6">
-                      <Icon className="h-8 w-8 text-[#1C396A]" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.desc}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Our Values */}
       <section className="py-16 md:py-20 bg-muted/30">

@@ -5,7 +5,7 @@ import Testimonial from "@/components/Testimonial";
 import CatalogueDownload from "@/components/CatalogueDownload";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Shield, Award, Users, Lock, Smartphone, Wrench, Star } from "lucide-react";
+import { ArrowRight, Shield, Award, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const features = [
@@ -72,42 +72,6 @@ const Home = () => {
 
       <Stats />
 
-      {/* Product Categories Showcase */}
-      <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Explore Our Product Range
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              From traditional locks to advanced security systems
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { name: "Mortise Handles", icon: Wrench, color: "from-blue-500 to-cyan-500" },
-              { name: "Padlocks", icon: Lock, color: "from-orange-500 to-red-500" },
-              { name: "Door Hardware", icon: Wrench, color: "from-purple-500 to-pink-500" },
-              { name: "Premium Series", icon: Star, color: "from-amber-500 to-yellow-500" },
-            ].map((category, index) => {
-              const Icon = category.icon;
-              return (
-                <Link key={index} to="/products">
-                  <Card className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                    <CardContent className="p-6">
-                      <div className={`w-full h-32 bg-gradient-to-br ${category.color} rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform`}>
-                        <Icon className="h-12 w-12 text-white" />
-                      </div>
-                      <h3 className="text-lg font-bold text-center">{category.name}</h3>
-                    </CardContent>
-                  </Card>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Catalogue Download Section */}
       <section className="py-16 md:py-20 bg-background">

@@ -13,7 +13,7 @@ const Products = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState("featured");
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 20000]);
+  
 
   const toggleCategory = (categoryId: string) => {
     setSelectedCategories(prev =>
@@ -25,7 +25,6 @@ const Products = () => {
 
   const clearFilters = () => {
     setSelectedCategories([]);
-    setPriceRange([0, 20000]);
     setSearchQuery("");
   };
 
@@ -33,8 +32,7 @@ const Products = () => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          product.description.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(product.category);
-    const matchesPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
-    return matchesSearch && matchesCategory && matchesPrice;
+    return matchesSearch && matchesCategory;
   });
 
   // Sort products
@@ -53,7 +51,7 @@ const Products = () => {
       <div>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-semibold">Filters</h3>
-          {(selectedCategories.length > 0 || priceRange[0] > 0 || priceRange[1] < 20000) && (
+          {selectedCategories.length > 0 && (
             <Button variant="ghost" size="sm" onClick={clearFilters}>
               <X className="h-4 w-4 mr-1" />
               Clear
@@ -80,28 +78,6 @@ const Products = () => {
         </div>
       </div>
 
-      <div>
-        <h4 className="font-medium mb-3 text-sm">Price Range</h4>
-        <div className="space-y-2">
-          <div className="flex items-center gap-2">
-            <Input
-              type="number"
-              placeholder="Min"
-              value={priceRange[0]}
-              onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-              className="h-9"
-            />
-            <span>-</span>
-            <Input
-              type="number"
-              placeholder="Max"
-              value={priceRange[1]}
-              onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-              className="h-9"
-            />
-          </div>
-        </div>
-      </div>
     </div>
   );
 

@@ -186,15 +186,15 @@ const Contact = () => {
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.8!2d78.0880!3d27.8974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDUzJzUwLjYiTiA3OMKwMDUnMTYuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3113.6105932187393!2d78.06818337547332!3d27.873674476087555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDUyJzI1LjIiTiA3OMKwMDQnMTQuNyJF!5e1!3m2!1sen!2sin!4v1765088163874!5m2!1sen!2sin"
                   width="100%"
-                  height="300"
+                  height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Alert India Location - Aligarh"
-                  className="w-full h-64"
+                  className="w-full"
                 ></iframe>
               </CardContent>
             </Card>
