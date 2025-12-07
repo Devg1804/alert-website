@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Award, Phone } from "lucide-react";
+import { ArrowRight, Shield, Award, Phone, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import brandImage from "@/assets/aalart-brand.jpg";
+import CatalogueDownload from "@/components/CatalogueDownload";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           backgroundImage: `url(${brandImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -51,7 +52,7 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
               <Button asChild size="lg" className="bg-[#E36E4A] hover:bg-[#D35E3A] text-white shadow-lg hover:shadow-xl transition-all group">
                 <Link to="/products">
                   Explore Products
@@ -64,6 +65,7 @@ const Hero = () => {
                   Call Us Now
                 </a>
               </Button>
+              <CatalogueDownload variant="compact" />
             </div>
           </div>
 

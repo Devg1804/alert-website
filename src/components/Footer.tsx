@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg">AALART LOCKS</h3>
-                <p className="text-xs opacity-80">Alert India No. 1</p>
+                <p className="text-sm opacity-80">Alert India No. 1</p>
               </div>
             </div>
             <p className="text-sm opacity-80">
@@ -23,8 +23,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4 text-base">Quick Links</h4>
-            <ul className="space-y-2 text-[15px]">
+            <h4 className="font-semibold mb-4 text-base">Quick Links</h4>
+            <ul className="space-y-2 text-sm">
               <li><a href="/" className="opacity-80 hover:opacity-100 transition-opacity">Home</a></li>
               <li><a href="/about" className="opacity-80 hover:opacity-100 transition-opacity">About</a></li>
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Products</a></li>
@@ -33,8 +33,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4 text-base">Products</h4>
-            <ul className="space-y-2 text-[15px]">
+            <h4 className="font-semibold mb-4 text-base">Products</h4>
+            <ul className="space-y-2 text-sm">
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Mortise Handles</a></li>
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Main Door Locks</a></li>
               <li><a href="/products" className="opacity-80 hover:opacity-100 transition-opacity">Shutter Locks</a></li>
@@ -43,8 +43,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4 text-base">Connect With Us</h4>
-            <div className="flex gap-4">
+            <h4 className="font-semibold mb-4 text-base">Connect With Us</h4>
+            <div className="flex gap-3">
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
@@ -61,14 +61,14 @@ const Footer = () => {
                 href="https://www.indiamart.com/aalart-locks/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors group"
+                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
                 title="Visit us on IndiaMART"
               >
                 <ExternalLink className="h-5 w-5" />
               </a>
             </div>
-            <div className="mt-4 text-[15px] opacity-80 space-y-1">
-              <p className="font-semibold">ALERT INDIA NO-1</p>
+            <div className="mt-4 text-sm opacity-80 space-y-1">
+              <p className="font-semibold text-primary-foreground opacity-100">ALERT INDIA NO-1</p>
               <p>Proprietor: ATAL GUPTA</p>
               <p>18/21, Sarai Mishra, Jaiganj</p>
               <p>Aligarh - 202001, Uttar Pradesh</p>
@@ -81,7 +81,7 @@ const Footer = () => {
               <p className="mt-2">
                 <a href="mailto:aalertindiano.1@gmail.com" className="hover:opacity-100">✉️ aalertindiano.1@gmail.com</a>
               </p>
-              <p className="text-xs mt-2">GSTIN: 09ANRPG4894Q1ZS</p>
+              <p className="mt-2">GSTIN: 09ANRPG4894Q1ZS</p>
             </div>
           </div>
         </div>
