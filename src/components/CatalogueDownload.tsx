@@ -10,7 +10,7 @@ const CatalogueDownload = ({ variant = "full" }: CatalogueDownloadProps) => {
   const handleDownload = () => {
     // In production, this would link to actual PDF
     const link = document.createElement("a");
-    link.href = "/catalogue.pdf";
+    link.href = "src/assets/Alart catalogue.pdf";
     link.download = "Aalart-Locks-Catalogue.pdf";
     link.click();
   };
@@ -47,7 +47,7 @@ const CatalogueDownload = ({ variant = "full" }: CatalogueDownloadProps) => {
             className="gap-2 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
           >
             <FileDown className="h-5 w-5" />
-            Download Catalogue (PDF, 5.2 MB)
+            Download Catalogue (PDF, 8.2 MB)
           </Button>
         </div>
       </div>

@@ -17,13 +17,13 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@aalartindia.com",
-    link: "mailto:info@aalartindia.com",
+    value: "aalertindiano.1@gmail.com",
+    link: "mailto:aalertindiano.1@gmail.com",
   },
   {
     icon: MapPin,
     label: "Address",
-    value: "Alert India No. 1, Aligarh, Uttar Pradesh",
+    value: "Alert India No. 1, 18/21, Sarai Mishra, Jaiganj, Aligarh, Uttar Pradesh",
     link: "#",
   },
   {

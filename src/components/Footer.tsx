@@ -1,5 +1,5 @@
-import { Lock, Facebook, Twitter, Instagram, Linkedin, ExternalLink } from "lucide-react";
-
+import { Lock, Facebook, Twitter, Instagram, Linkedin, ExternalLink } from "lucide-react"; 
+import indiamartLogo from "@/assets/INDIAMART.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -48,24 +48,38 @@ const Footer = () => {
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+              {/* <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a 
-                href="https://www.indiamart.com/aalart-locks/" 
+              {/* <a 
+                href="https://www.indiamart.com/alert-indiano1-aligarh/profile.html?srsltid=AfmBOooPdTLGWxqGqo8TaeieZcYxmKTipZtDEpMZj-8IxWxCXWfNulxj" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
                 title="Visit us on IndiaMART"
               >
                 <ExternalLink className="h-5 w-5" />
+              </a> */}
+              <a
+                href="https://www.indiamart.com/alert-indiano1-aligarh/profile.html?srsltid=AfmBOooPdTLGWxqGqo8TaeieZcYxmKTipZtDEpMZj-8IxWxCXWfNulxj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors flex items-center justify-center"
+                title="Visit us on IndiaMART"
+              >
+                <img
+                  src={indiamartLogo}
+                  alt="IndiaMART"
+                  className="h-5 w-5 object-contain"
+                />
               </a>
+
             </div>
             <div className="mt-4 text-sm opacity-80 space-y-1">
               <p className="font-semibold text-primary-foreground opacity-100">ALERT INDIA NO-1</p>
