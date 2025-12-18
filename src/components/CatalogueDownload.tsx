@@ -9,10 +9,16 @@ interface CatalogueDownloadProps {
 const CatalogueDownload = ({ variant = "full" }: CatalogueDownloadProps) => {
   const handleDownload = () => {
     // In production, this would link to actual PDF
+    // const link = document.createElement("a");
+    // link.href = "assets/Alart-catalogue.pdf";
+    // link.download = "Alart-catalogue.pdf";
+    // link.click();
     const link = document.createElement("a");
-    link.href = "src/assets/Alart catalogue.pdf";
+    link.href = "/Aalart-Locks-Catalogue.pdf"; // root-relative
     link.download = "Aalart-Locks-Catalogue.pdf";
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   if (variant === "compact") {
